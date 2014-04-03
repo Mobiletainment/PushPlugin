@@ -53,7 +53,7 @@
             }
             
             // handle APNS notifications for iOS
-            function onNotificationAPN(e) {
+            onNotificationAPN = function(e) {
                 if (e.alert) {
                      $("#app-status-ul").append('<li>push-notification: ' + e.alert + '</li>');
                      navigator.notification.alert(e.alert);
